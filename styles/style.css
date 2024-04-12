@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("../img/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: aliceblue;
+  border: solid rgba(158, 158, 158, 0.726) 3px;
+  display: flex;
+  justify-content: space-around;
+}
+ul {
+  display: flex;
+  gap: 15px;
+}
+li {
+  list-style: none;
+}
+li :hover {
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+  padding: 5rem 40rem;
+}
+
+section {
+  border-radius: 20%;
+  width: 650px;
+  height: 400px;
+  padding: 0 2rem;
+  display: flex;
+  background-color: aliceblue;
+}
+.img1{
+  padding-top: 99px;
+}
+.text {
+  padding-top: 70px;
+
+}
+
