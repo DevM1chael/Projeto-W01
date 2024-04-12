@@ -9,6 +9,7 @@ body {
   background-image: url("../img/bg-desktop-light.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -27,12 +28,26 @@ ul {
 li {
   list-style: none;
 }
-li :hover {
+
+h1 {
+  color: rgb(156, 125, 192);
+  font-weight: 800;
+}
+
+h1:hover {
+  color: rgb(94, 75, 116);
 }
 
 a {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: rgb(156, 125, 192);
+}
+
+a:hover {
+  color: rgb(94, 75, 116);
 }
 
 main {
@@ -42,18 +57,50 @@ main {
 }
 
 section {
-  border-radius: 20%;
+  border-radius: 70px;
+  gap: 20px;
   width: 650px;
-  height: 400px;
+  height: 370px;
   padding: 0 2rem;
   display: flex;
   background-color: aliceblue;
 }
-.img1{
-  padding-top: 99px;
+
+h2 {
+  color: rgb(156, 125, 192);
+  font-size: 2rem;
+  padding-left: 5px;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.img1 {
+  padding-top: 60px;
+  padding-left: 5px;
 }
 .text {
   padding-top: 70px;
-
 }
 
+button {
+  width: 100px;
+  height: 25px;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(181, 145, 223);
+  color: white;
+  cursor: pointer;
+  margin: 1rem 4.5rem;
+}
+
+button:hover {
+  background-color: rgb(156, 125, 192);
+}
