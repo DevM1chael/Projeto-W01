@@ -6,7 +6,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-image: url("../img/bg-desktop.jpg");
+  background-image: url("./img/bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
