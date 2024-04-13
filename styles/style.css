@@ -14,11 +14,12 @@ body {
 
 header {
   min-width: 1032px;
+  height: 50px;
   align-items: center;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: solid rgba(158, 158, 158, 0.726) 3px;
+  background-color: rgba(240, 248, 255, 0.041);
+  box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
+  border-bottom: solid rgba(240, 248, 255, 0.041) 3px;
   display: flex;
   justify-content: space-around;
 }
@@ -28,6 +29,8 @@ ul {
 }
 li {
   list-style: none;
+  animation-name: leftright;
+  animation-duration: 1000ms;
 }
 li:hover {
   transform: scale(1.2);
@@ -35,15 +38,23 @@ li:hover {
 }
 
 h1 {
-  color: rgb(52, 34, 73);
+  color: white;
   font-weight: 800;
   cursor: pointer;
+  text-shadow: 3px 1px 2px rgba(255, 223, 223, 0.5);
+  animation-name: leftright;
+  animation-duration: 1000ms;
 }
 
 h1:hover {
-  color: black;
+  color: rgb(185, 183, 183);
   transform: scale(1.2);
   transition-duration: 200ms;
+}
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-shadow: 3px 1px 2px rgba(37, 33, 33, 0.5);
 }
 
 a {
@@ -51,11 +62,11 @@ a {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  color: rgb(52, 34, 73);
+  color: white;
 }
 
 a:hover {
-  color: black;
+  color: rgb(185, 183, 183);
 }
 
 main {
@@ -65,6 +76,8 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  animation-name: leftright;
+  animation-duration: 1000ms;
 }
 
 section {
@@ -74,17 +87,10 @@ section {
   max-width: 1000px;
   padding: 20px; /* Adiciona um espaçamento interno */
   border-radius: 10px; /* Adiciona cantos arredondados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
   display: flex;
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(240, 248, 255, 0.041);
+  box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.5);
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
 }
 
 input {
@@ -102,6 +108,7 @@ input {
   position: relative;
   background-image: url("../img/Screenshot_1.jpg");
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -130,7 +137,7 @@ button:hover {
 }
 
 .avisos {
-  color: rgb(52, 34, 73);
+  color: white;
   border-radius: 70px;
   width: 50%; /* Define a largura da section */
   margin: 0 auto; /* Centraliza a section na tela */
@@ -138,22 +145,22 @@ button:hover {
   border-radius: 10px; /* Adiciona cantos arredondados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
   display: flex;
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(240, 248, 255, 0.041);
+  box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-weight: 800;
 }
 
 aside {
+  text-align: center;
   border-radius: 70px;
   width: 50%; /* Define a largura da section */
   margin: 40px auto; /* Centraliza a section na tela */
   padding: 20px; /* Adiciona um espaçamento interno */
   border-radius: 10px; /* Adiciona cantos arredondados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
   height: 600px;
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(240, 248, 255, 0.123);
+  box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 aside .img {
@@ -161,13 +168,28 @@ aside .img {
   align-items: center;
 }
 aside .img p {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 16.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: rgb(52, 34, 73);
+  color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .section {
-    width: 90%; /* Reduz a largura da section para telas menores */
+aside .text2 p {
+  text-align: center;
+  padding-top: 1.8rem;
+  color: white;
+  font-size: 1.1rem;
+}
+
+@keyframes leftright {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
