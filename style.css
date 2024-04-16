@@ -37,6 +37,10 @@ li:hover {
   transition-duration: 200ms;
 }
 
+.list :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
 h1 {
   color: white;
   font-weight: 800;
@@ -51,6 +55,11 @@ h1:hover {
   transform: scale(1.2);
   transition-duration: 200ms;
 }
+
+.tittle :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
 h2 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -136,6 +145,10 @@ button:hover {
   transition-duration: 200ms;
 }
 
+.text :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
 .avisos {
   color: white;
   border-radius: 70px;
@@ -149,6 +162,10 @@ button:hover {
   box-shadow: 0 0 10px rgba(255, 246, 246, 0.315);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-weight: 800;
+}
+
+.avisos p {
+  padding: 0 7rem;
 }
 
 aside {
@@ -181,7 +198,8 @@ article {
   text-align: center;
   border-radius: 70px;
   width: 50%; /* Define a largura da section */
-  margin: 2.8rem auto; /* Centraliza a section na tela */
+  margin: 0rem auto; /* Centraliza a section na tela */
+  margin-bottom: 2.5rem;
   padding: 20px; /* Adiciona um espaçamento interno */
   border-radius: 10px; /* Adiciona cantos arredondados */
   height: 600px;
@@ -219,7 +237,7 @@ nav p {
 
 footer {
   display: flex;
-  margin-top: 400px;
+  margin-top: 200px;
   min-width: 1032px;
   height: 70px;
   align-items: center;
@@ -252,6 +270,43 @@ footer {
   width: 700px;
   font-size: 14px;
 }
+
+.email {
+  cursor: pointer;
+  transition: transform 2.5s ease;
+}
+.email :hover {
+  transform: scale(1.2);
+  transition: 400ms;
+}
+.email :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
+.whatsapp {
+  cursor: pointer;
+  transition: transform 2.5s ease;
+}
+.whatsapp :hover {
+  transform: scale(1.2);
+  transition: 400ms;
+}
+.whatsapp :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
+.telefone {
+  cursor: pointer;
+  transition: transform 2.5s ease;
+}
+.telefone :hover {
+  transform: scale(1.2);
+  transition: 400ms;
+}
+.telefone :not(:hover) {
+  transition: transform 2s ease; /* Transição da escala de volta ao tamanho original com duração de 0.5 segundos */
+}
+
 @keyframes leftright {
   0% {
     opacity: 0;
